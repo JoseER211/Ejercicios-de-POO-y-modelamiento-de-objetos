@@ -18,6 +18,7 @@ public abstract class CelestialBody {
         DistanceToTheSun = distanceToTheSun;
     }
 
+
     public Integer getId() {
         return id;
     }
