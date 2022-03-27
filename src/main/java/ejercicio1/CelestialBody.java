@@ -1,6 +1,6 @@
 package main.java.ejercicio1;
 
-public class CelestialBody {
+public abstract class CelestialBody {
     private Integer id;
     private String name;
     private Double mass;
