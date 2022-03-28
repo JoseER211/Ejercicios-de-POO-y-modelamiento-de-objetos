@@ -1,23 +1,61 @@
 package main.java.ejercicio1;
-
-
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Earth planeta1 = new Earth();
+        System.out.println("Este programa permite calcular la atracción gravitatoria entre 2 cuerpos del sistema solar." + "\n");
 
-        Mars planeta2 = new Mars();
+        System.out.println("0. Sol" + "\n" + "1. Mercurio" + "\n" + "2. Venus" + "\n" + "3. Tierra" + "\n" + "4. Marte" +
+                "\n" + "5. Júpiter" + "\n" + "6. Saturno" + "\n" + "7. Urano" + "\n" + "8. Neptuno" + "\n" + "9. Plutón" + "\n");
 
+        Integer chooseBody1;
+        System.out.println("Elija el primer cuerpo");
+        chooseBody1 = Scan();
 
-        System.out.println("La atracción gravitatoria entre " + planeta1.getName() + " y " + planeta2.getName() + " es: " + gravitationalPull(planeta1, planeta2) + " N");
+        Integer chooseBody2;
+        System.out.println("Elija el segundo cuerpo");
+        chooseBody2 = Scan();
 
+       Map<Integer, CelestialBody> bodies = new HashMap<>();
+
+        bodies.put(0, new Sun());
+        bodies.put(1, new Mercury());
+        bodies.put(2, new Venus());
+        bodies.put(3, new Earth());
+        bodies.put(4, new Mars());
+        bodies.put(5, new Jupiter());
+        bodies.put(6, new Saturn());
+        bodies.put(7, new Uranus());
+        bodies.put(8, new Neptune());
+        bodies.put(9, new Pluto());
+        
+       System.out.println("La atracción gravitatoria entre " +  bodies.get(chooseBody1).getName() + " y " + bodies.get(chooseBody2).getName() +
+               " es: " + gravitationalPull(bodies.get(chooseBody1), bodies.get(chooseBody2)) + " N");
     }
 
-    public static Double gravitationalPull(Earth planeta1, Mars planeta2) {
+    /**
+     * Escanea un dato por teclado.
+     * @return el dato escaneado.
+     */
+    public static Integer Scan(){
+        Scanner data = new Scanner(System.in);
+        Integer option = data.nextInt();
+        return option;
+    }
 
-        Double multiply = multiplyMass(planeta1, planeta2);
-        Double distance = distanceCalculator(planeta1, planeta2);
+    /**
+     * Calcula la atracción gravitatoria entre los 2 cuerpos elegidos.
+     * @param body1 cuerpo 1
+     * @param body2 cuerpo 2
+     * @return La atracción gravitatoria de los 2 cuerpos elegidos
+     */
+    public static Double gravitationalPull(CelestialBody body1, CelestialBody body2) {
+
+        Double multiply = multiplyMass(body1, body2);
+        Double distance = distanceCalculator(body1, body2);
 
         final Double gravitationalConstant = 6.67 * Math.pow(10, -11);
 
@@ -28,18 +66,30 @@ public class Main {
         return resultado;
     }
 
-    public static Double distanceCalculator(Earth planeta1, Mars planeta2) {
+    /**
+     * Resta la distancia que los 2 cuerpos tienen con el sol
+     * @param body1 cuerpo 1
+     * @param body2 cuerpo 2
+     * @return la resta de la distancia que tienen los 2 cuerpos con el sol
+     */
+    public static Double distanceCalculator(CelestialBody body1, CelestialBody body2) {
 
-        if (planeta1.getDistanceToTheSun() < planeta2.getDistanceToTheSun()) {
-            return  planeta2.getDistanceToTheSun() - planeta1.getDistanceToTheSun();
+        if (body1.getDistanceToTheSun() < body2.getDistanceToTheSun()) {
+            return  body2.getDistanceToTheSun() - body1.getDistanceToTheSun();
         } else {
-            return planeta1.getDistanceToTheSun() - planeta2.getDistanceToTheSun();
+            return body1.getDistanceToTheSun() - body2.getDistanceToTheSun();
         }
     }
 
-    public static Double multiplyMass(Earth planeta1, Mars planeta2) {
+    /**
+     * Multiplica la masa de los 2 cuerpos elegidos
+     * @param body1 cuerpo 1
+     * @param body2 cuerpo 2
+     * @return la multiplicación de la masa de los 2 cuerpos elegidos
+     */
+    public static Double multiplyMass(CelestialBody body1, CelestialBody body2) {
 
-        return planeta1.getMass() * planeta2.getMass();
+        return body1.getMass() * body2.getMass();
     }
 }
 
