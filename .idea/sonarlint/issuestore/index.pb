@@ -1,21 +1,5 @@
 
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 T
-$src/main/java/ejercicio1/Uranus.java,6\6\660b1f039278174e49ec410f32b813bd8b22b0f8
-S
-#src/main/java/ejercicio1/Venus.java,a\7\a7e3070ce771c7458e2fa71781956c8d0ebeeeca
-Q
-!src/main/java/ejercicio1/Sun.java,6\6\662f9f30a0ee46c16a6bb58c2435ae21dc05fa14
-T
-$src/main/java/ejercicio1/Saturn.java,f\4\f473e2143c48e4b111bf64a0c1913fec775c09a5
-S
-#src/main/java/ejercicio1/Pluto.java,f\7\f7c66edffc9057b473f42aeefa9786cce8bb9c39
-U
-%src/main/java/ejercicio1/Neptune.java,0\2\025b2a41dedb6c8161fff2af1cb028805fee6b51
-U
-%src/main/java/ejercicio1/Mercury.java,b\7\b7704955f44b87fca63dbd4d7b598b560f6423a4
+$src/main/java/exercise1/Jupiter.java,5\6\5693138c37ee2ef2c5e95127603a4340a6776479
 R
-"src/main/java/ejercicio1/Mars.java,2\3\2340bc4597ee22523946aa71288107f53e473cfa
-U
-%src/main/java/ejercicio1/Jupiter.java,e\6\e667efdf7c6122f1f85ac5c4baf0cd78d390cb93
+"src/main/java/exercise1/Earth.java,8\c\8cb89d8f25501da62cda515107cff38733cb87b7
