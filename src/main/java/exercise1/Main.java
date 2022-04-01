@@ -15,12 +15,24 @@ public class Main {
                 "\n" + "5. Júpiter" + "\n" + "6. Saturno" + "\n" + "7. Urano" + "\n" + "8. Neptuno" + "\n" + "9. Plutón" + "\n");
 
         Integer chooseBody1;
-        System.out.println("Elija el primer cuerpo");
-        chooseBody1 = Scan();
+        do {
+            System.out.println("Elija el primer cuerpo" );
+            chooseBody1 = Scan();
+            if (chooseBody1 > 9){
+                System.out.println("Opción incorrecta" + "\n");
+            }
+
+        } while (chooseBody1 > 9);
 
         Integer chooseBody2;
-        System.out.println("Elija el segundo cuerpo");
-        chooseBody2 = Scan();
+        do {
+            System.out.println("Elija el segundo cuerpo");
+            chooseBody2 = Scan();
+            if (chooseBody2 > 9){
+                System.out.println("Opción incorrecta" + "\n");
+            }
+
+        } while (chooseBody2 > 9);
 
        Map<Integer, CelestialBody> bodies = new HashMap<>();
 
@@ -35,7 +47,7 @@ public class Main {
         bodies.put(8, new Neptune());
         bodies.put(9, new Pluto());
 
-       System.out.println("La atracción gravitatoria entre " +  bodies.get(chooseBody1).getName() + " y " + bodies.get(chooseBody2).getName() +
+       System.out.println("\n" + "La atracción gravitatoria entre " +  bodies.get(chooseBody1).getName() + " y " + bodies.get(chooseBody2).getName() +
                " es: " + gravitationalPull(bodies.get(chooseBody1), bodies.get(chooseBody2)) + " N");
     }
 
