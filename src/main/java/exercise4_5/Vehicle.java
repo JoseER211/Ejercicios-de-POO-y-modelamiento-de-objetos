@@ -1,5 +1,8 @@
 package main.java.exercise4_5;
 
+/**
+ * @author Jose David Echavarria Ruiz
+ */
 public class Vehicle {
     protected String vehicleType;
     protected Integer numberPassengers;
