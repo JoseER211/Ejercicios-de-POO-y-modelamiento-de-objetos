@@ -6,6 +6,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+
+
+
+        Boat boat = new Boat("bote", 2, "si", 0, "20/12/2002", "maritimo", "Brazil" );
+
+
+        System.out.println(boat.toString());
+
+
+
+
+
+/*
         System.out.println("Este programa permite ingresar vehículos en el ferry");
         ArrayList<Vehicle> vehicles = new ArrayList<>();
 
@@ -37,7 +51,7 @@ public class Main {
             vehicles.add(vehicle);
         }
 
-        System.out.println(vehicles.toString());
+        System.out.println(vehicles.toString());*/
     }
 
 

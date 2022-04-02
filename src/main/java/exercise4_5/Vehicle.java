@@ -1,14 +1,12 @@
 package main.java.exercise4_5;
 
-import java.util.Date;
-
 public class Vehicle {
-    private String vehicleType;
-    private Integer numberPassengers;
-    private String crew;
-    private Integer numberWheels;
-    private String registrationDate;
-    private String displacement;
+    protected String vehicleType;
+    protected Integer numberPassengers;
+    protected String crew;
+    protected Integer numberWheels;
+    protected String registrationDate;
+    protected String displacement;
 
     public Vehicle(String vehicleType, Integer numberPassengers, String crew, Integer numberWheels,
                    String registrationDate, String displacement) {
