@@ -1,0 +1,13 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ıÏšüûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(±ù øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(°†¢ú
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÕÆ­Šÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¸ôãĞûÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ÕÆ­Šÿÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.( ¾˜Öşÿÿÿÿ
+h	java:S100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÂ´¯şÿÿÿÿ
+y
+java:S1488<"^Immediately return this expression instead of assigning it to the temporary variable "option".(Œ¨¶Èùÿÿÿÿ
+w
+java:S1488O"aImmediately return this expression instead of assigning it to the temporary variable "resultado".(½±ãš

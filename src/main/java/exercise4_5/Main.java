@@ -222,7 +222,7 @@ public class Main {
      * Crea un nuevo vehículo con las características de una lancha.
      * @return el vehículo lancha.
      */
-    
+
     public static Vehicle boat(){
 
         System.out.println("\n" +"Digite los datos del vehículo." + "\n");
