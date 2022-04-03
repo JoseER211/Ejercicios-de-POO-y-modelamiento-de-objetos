@@ -19,5 +19,7 @@ T
 $src/main/java/exercise4_5/Truck.java,1\f\1ff313702e73a138c14e66f91af3069b542516b3
 V
 &src/main/java/exercise4_5/Bicycle.java,e\c\eccfcdb6ff7d7b3c5bbaaa39843d259b932ec57a
-V
-&src/main/java/exercise4_5/Vehicle.java,e\8\e8d3f7e1e96681fe63f5eca295d81c541f7ef9e8
+S
+#src/main/java/exercise2/Explication,b\2\b2f31ea275e456612b165b6e83d3e8886752e6c6
+Q
+!src/main/java/exercise3/main.java,e\d\ed9068aa66fd0ae85db09461ae512dd5ac625596

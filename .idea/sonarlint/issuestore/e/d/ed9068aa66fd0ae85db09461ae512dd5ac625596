@@ -1,0 +1,22 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¦õš
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Æì¸Îşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ĞâÏôÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+>
+java:S2140")Use "java.util.Random.nextInt()" instead.(İÔ¾$
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘Ä¸Éùÿÿÿÿ8µı•ş/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(æÃÉøÿÿÿÿ8¶ı•ş/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(—¹Ü8·ı•ş/
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¹ı•ş/
+U	java:S106("9Replace this use of System.out or System.err by a logger.(Ìèÿ8ºı•ş/
+U	java:S106."9Replace this use of System.out or System.err by a logger.(‹Ø´8åë–ş/
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(¤¼æ¶8”³Ğ–ş/
+h	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÂ´¯şÿÿÿÿ
+@
+java:S1197s"*Move the array designators [] to the type.(Áˆè¤
+y
+java:S1488A"^Immediately return this expression instead of assigning it to the temporary variable "option".(Œ¨¶Èùÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+b
+java:S1223	"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘
